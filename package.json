@@ -1,6 +1,6 @@
 {
   "name": "react-components",
-  "home": "https://nisan-cb.github.io/react-components",
+  "homepage": "https://nisan-cb.github.io/react-components",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
