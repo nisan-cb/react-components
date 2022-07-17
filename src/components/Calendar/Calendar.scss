@@ -1,0 +1,49 @@
+#calendar{
+    // background-color: rgb(199, 118, 118);
+    width: 80%;
+    min-height: 80%;
+    height: fit-content;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 8px rgb(201, 201, 201);
+    table{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        margin: 10px 0;
+        tr{
+            padding: 4px 6px;
+        }
+        td{
+            padding: 10px 6px;
+            height: 60px;
+            cursor: pointer;
+        }
+        td:hover{
+            background-color: rgba(61, 255, 255, 0.28);
+        }
+        .calendar-day{
+            color: #ddd;
+            p{
+                border-radius: 50%;
+                width: fit-content;
+                margin: 0 auto;
+                padding: 8px;
+            }
+        }
+        .this-month{
+            color:black;
+        }
+        .today{
+            background-color: rgb(36, 214, 176);
+        }
+
+    }
+    table, th, td{
+        border:1px solid rgb(136, 133, 133);
+    }
+}
