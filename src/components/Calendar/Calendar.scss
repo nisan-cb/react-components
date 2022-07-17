@@ -1,5 +1,6 @@
 #calendar{
-    // background-color: rgb(199, 118, 118);
+    position: absolute;
+    top: 0;
     width: 80%;
     min-height: 80%;
     height: fit-content;
@@ -9,6 +10,11 @@
     left: 50%;
     transform: translate(-50%,-50%);
     box-shadow: 0 0 8px rgb(201, 201, 201);
+    #current-displayed{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
     table{
         margin: 0 auto;
         width: 100%;
@@ -45,5 +51,24 @@
     }
     table, th, td{
         border:1px solid rgb(136, 133, 133);
+    }
+
+    #btn-area{
+        position: absolute;
+        right: 20px;
+        top: 0;
+        button{
+            width: 30px;
+            height: 30px;
+            background-color: rebeccapurple;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #right{
+            clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+        }
+        #left{
+            clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        }
     }
 }
